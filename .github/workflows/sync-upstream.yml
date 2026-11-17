@@ -109,7 +109,7 @@ jobs:
 
     - name: Create sync summary
       if: steps.check_changes.outputs.no_changes == 'false'
-    run: |  
+      run: |  
         echo "## 🔄 同步完成" >> $GITHUB_STEP_SUMMARY
         echo "" >> $GITHUB_STEP_SUMMARY
         echo "✅ 已成功同步上游仓库的更改" >> $GITHUB_STEP_SUMMARY
